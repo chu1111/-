@@ -2,7 +2,7 @@ package java;
 
 import static java.lang.System.out;
 
-public class java {
+public class java01 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
