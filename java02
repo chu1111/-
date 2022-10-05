@@ -1,0 +1,33 @@
+package a;
+import static java.lang.System.out;
+
+import a.Data.Test;
+public class java02 {
+	public static void main(String[] args) {
+		Data d = new Data();
+		Data.Test t = d.new Test();
+	}
+}
+class Data{
+	private String name;
+	private Test score;
+	
+	class Test{
+		int english, math;
+		void Test(int eng, int m) {
+			english = eng;
+			math = m;
+		}
+		double avg() {
+			double e = english;
+			double m = math;
+			return (e + m) / 2;
+		}
+		void show(String name) {
+			out.println("name" + name);
+			out.print("english=" + english);
+			out.print("math=" + math);
+			out.print("avg=" + this.avg());
+		}
+	}
+}
