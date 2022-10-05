@@ -1,0 +1,25 @@
+package java;
+
+import static java.lang.System.out;
+
+public class java {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Cal_area c = new Cal_area();
+		c.Ca(10);
+		c.Ca(4, 5, 6);
+	}
+
+}
+
+class Cal_area{
+	void Ca(int r) {
+		System.out.println("半徑");
+		out.printf("球型體積 = %.1f" , 4 / 3 * Math.PI * Math.pow(r,  3));
+	}
+	void Ca(int l, int w, int h) {
+		out.println("長 = " + l + ",寬 = " + w + ", 高 = " + h);
+		out.println("立方體表面積 = " + (l * w + l * h + w * h) * 2);
+	}
+}
